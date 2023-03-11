@@ -39,6 +39,7 @@ namespace WebApiEstoque.Repositorios
             UsuarioModel usuarioPorId = await BuscarPorId(id) ?? throw new Exception($"Usuário para o ID: {id} não foi encontrado no banco de dados.");
             usuarioPorId.Nome = usuario.Nome;
             usuarioPorId.Email = usuario.Email;
+            usuarioPorId.Administrador = usuario.Administrador;
 
             _dbContext.Usuarios.Update(usuarioPorId);
             await _dbContext.SaveChangesAsync();
