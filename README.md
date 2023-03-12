@@ -10,19 +10,19 @@ na tabela de usuario tem a Roles, na qual apenas o usuario que tenha Roles == "a
 ### 🔧 O que foi utilizado
 
  ASP .NET C#:
- Microsoft.EntityFrameworkCore.Tools 7.0.3
- Microsoft.EntityFrameworkCore.InMemory 7.0.3
- Microsoft.EntityFrameworkCore.SqlServer 7.0.3
- Microsoft.EntityFrameworkCore.Tools 7.0.3
- Microsoft.NETCore.App 2.2.8
- Microsoft.NETCore.DotNetHostPolicy 7.0.3
- Microsoft.NETCore.Platforms 7.0.0
- Microsoft.NETCore.Targets 5.0.0
- Microsoft.VisualStudio.Web.CodeGeneration.Design 7.0.4
- Pomelo.EntityFrameworkCore.MySql 7.0.0
- Swashbuckle.AspNetCore 6.5.0
- Mysql 8.0 CE
- e Swagger UI para testar a API
+ Microsoft.EntityFrameworkCore.Tools 7.0.3<br/>
+ Microsoft.EntityFrameworkCore.InMemory 7.0.3<br/>
+ Microsoft.EntityFrameworkCore.SqlServer 7.0.3<br/>
+ Microsoft.EntityFrameworkCore.Tools 7.0.3<br/>
+ Microsoft.NETCore.App 2.2.8<br/>
+ Microsoft.NETCore.DotNetHostPolicy 7.0.3<br/>
+ Microsoft.NETCore.Platforms 7.0.0<br/>
+ Microsoft.NETCore.Targets 5.0.0<br/>
+ Microsoft.VisualStudio.Web.CodeGeneration.Design 7.0.4<br/>
+ Pomelo.EntityFrameworkCore.MySql 7.0.0<br/>
+ Swashbuckle.AspNetCore 6.5.0<br/>
+ Mysql 8.0 CE<br/>
+ e Swagger UI para testar a API<br/>
  
 
 ## 🖇️ Referencias
