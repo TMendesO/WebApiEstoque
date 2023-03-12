@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Data;
 using System.Threading.Tasks;
 using WebApiEstoque.Models;
 using WebApiEstoque.Repositorios.Interface;
@@ -31,14 +33,14 @@ namespace WebApiEstoque.Controllers
             return Ok(produto);
         }
 
-        [HttpPost]
+        [HttpPost, Authorize(Roles = "administrator")]
         public async Task<ActionResult<ProdutoModel>> Cadastrar([FromBody]ProdutoModel produtoModel)
         {
            ProdutoModel produto = await _produtosRepositorio.Adicionar(produtoModel);
             return Ok(produto);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id}"), Authorize(Roles = "administrator")]
         public async Task<ActionResult<ProdutoModel>> Atualizar([FromBody] ProdutoModel produtoModel, int id)
         {
             produtoModel.Id = id;
@@ -46,7 +48,7 @@ namespace WebApiEstoque.Controllers
             return Ok(produto);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}"), Authorize(Roles = "administrator")]
         public async Task<ActionResult<ProdutoModel>> Apagar(int id)
         {
           bool apagado = await _produtosRepositorio.Apagar(id);
