@@ -4,7 +4,7 @@
 
 ## 🚀 Breve descrição
 
- Minha primeira API com C#, projeto basico com duas tabelas uma tabela de produjtos e de usuario, na tabela de produtos, informações basicas e imagem com url
+ Minha primeira API com C#, projeto basico com duas tabelas uma tabela de produtos e de usuario, na tabela de produtos, informações basicas e imagem com url
 na tabela de usuario tem a Roles, na qual apenas o usuario que tenha Roles == "administrator" pode fazer alterações nos produtos.
 
 ### 🔧 O que foi utilizado
